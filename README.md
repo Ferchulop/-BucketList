@@ -13,9 +13,5 @@ BucketList es una app **MVVM** desarrollada en SwiftUI que permite a los usuario
 
 - **Uso de Compiler Directives, @escaping:**
  - **Compiler Directives:** Usado para pruebas y depuración, en este caso para evitar cargar en producción datos ficticios o vistas previas innecesarias.
-   #if DEBUG
-    print("Modo de depuración activado")
-#else
-    print("Modo producción activado")
-#endif
+
  - **@escaping:** Ideal en operaciones asíncronas, como la función "fetchNearbyPlaces" en la vista de "EditView". Dado que el proceso de red o de carga de datos puede tardar, el "@escaping" permite que "fetchNearbyPlaces" complete su ejecución después de que el código haya salido del alcance de la función que lo llamó.

@@ -8,8 +8,9 @@ import MapKit
 import SwiftUI
 
 struct ContentView: View {
+  
     // Coordenadas predefinidas para que se muestre al iniciar la app, en este caso Madrid.
-    let startPosition = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.4165 , longitude: -3.70256), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)))
+    let startPosition = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.4165 , longitude: -3.70256), span: MKCoordinateSpan(latitudeDelta: 6, longitudeDelta: 6)))
     // ViewModel que maneja la lógica de negocio y el estado de la vista.
     @State private var viewModel = ViewModel()
     var body: some View {
@@ -32,13 +33,29 @@ struct ContentView: View {
                                 }
                         }
                     }
+                    
+                   
                 }
+                //Challenge 1: añado modificador para asegurarme que se actualiza correctamente segun lo definido en el viewModel
+                .mapStyle(viewModel.mapStyle)
                 // Detecta toques en el mapa y convierte cada posicion en una coordenada.
                 .onTapGesture { position in
                     if let coordinate = proxy.convert(position, from: .local){
                         viewModel.addLocation(at: coordinate)
                     }
                 }
+                // CHALLENGE 1:
+                HStack(spacing: 80) {
+                    Button("Hybrid") {
+                        viewModel.mapStyle = .hybrid
+                    }
+                    
+                    Button("Standard") {
+                        viewModel.mapStyle = .standard
+                    }
+                }
+                
+                .buttonStyle(.borderedProminent)
                 // Abro una nueva vista(hoja) para editar la ubicación seleccionada
                 .sheet(item: $viewModel.selectedLocation) { place in
                     EditView(location: place) {
@@ -46,7 +63,7 @@ struct ContentView: View {
                     }
                 }
             }
-        } else {
+        }else {
             Button("Unlock places", action: viewModel.authentication)
                 .padding()
                 .background(.blue)

@@ -8,11 +8,14 @@ import CoreLocation // Framework para obtener la posición geográfica del dispo
 import Foundation
 import LocalAuthentication // Framework para autenticación biometrica Face ID, Touch ID o Optic ID
 import MapKit
+import _MapKit_SwiftUI
 // Encapsulo la lógica del modelo de datos para usar solo dentro de ContentView que contiene una clase ViewModel bajo la macro @Observable para visualizar automaticamente todos los cambios.
 extension ContentView {
     @Observable
     
     class ViewModel {
+        // CHALLENGE 1:
+        var mapStyle: MapStyle = .standard
         // Con private(set) me aseguro de proteger las ubicaciones almacenadas contra escritura directa para evitar ser modificada.
         private(set) var locations: [Location]
         var selectedLocation: Location?

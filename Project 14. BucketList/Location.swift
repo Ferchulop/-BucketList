@@ -19,7 +19,7 @@ struct Location: Codable, Identifiable, Equatable {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
     
-    /*Compiler Directives: 1. Este bloque condicionl protege el codigo de pruebas para  no estar presente en producción ya que example contiene datos ficticios para pruebas o vistas previas. 2. Facilita las pruebas durante el desarrollo al incluir ejemplos rápidos. 3. Mejora la seguridad y eficiencia de la app final.  */
+    /*Compiler Directives: 1. Este bloque condicional protege el codigo de pruebas para no estar presente en producción ya que example contiene datos ficticios para pruebas o vistas previas. 2. Facilita las pruebas durante el desarrollo al incluir ejemplos rápidos. 3. Mejora la seguridad y eficiencia de la app final.  */
 #if DEBUG
     static let example = Location(id: UUID(), name: "Example", description: "Description", latitude: 40.4165, longitude: -3.70256)
 #endif

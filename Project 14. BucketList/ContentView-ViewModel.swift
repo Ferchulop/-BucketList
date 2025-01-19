@@ -11,15 +11,16 @@ import MapKit
 import _MapKit_SwiftUI
 // Encapsulo la lógica del modelo de datos para usar solo dentro de ContentView que contiene una clase ViewModel bajo la macro @Observable para visualizar automaticamente todos los cambios.
 extension ContentView {
-    @Observable
+   @Observable
     
     class ViewModel {
         // CHALLENGE 1:
         var mapStyle: MapStyle = .standard
         // Con private(set) me aseguro de proteger las ubicaciones almacenadas contra escritura directa para evitar ser modificada.
-        private(set) var locations: [Location]
-        var selectedLocation: Location?
-        var isUnlocked = false
+       private(set) var locations: [Location]
+       var selectedLocation: Location?
+       var isUnlocked = false
+       var showingError = false
         // Ruta para guardar las ubicaciones en el sistema de archivos.
         let savePath = URL.documentsDirectory.appending(path: "SavedLocations")
         
@@ -61,25 +62,38 @@ extension ContentView {
             }
             
         }
+        
         // Funcion para realizar la autenticación biométrica.
-        func authentication() {
+        func authentication() async {
             let context = LAContext()
             var error: NSError?
             
             if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-                let reason = "Please authenticate yourself to unluck your places."
-                
-                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
-                    success, authenticationError in
-                    
+                let reason = "Please authenticate yourself to unlock your places."
+                // CHALLENGE 2:
+                do {
+                let success = try await context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason)
+                   
                     if success {
-                        self.isUnlocked = true
-                    } else {
-                        // error
+                        DispatchQueue.main.async {
+                            self.isUnlocked = true
+                        }
+                    }
+                        } catch {
+                        DispatchQueue.main.async {
+                            self.showingError = true
+                                print("error: \(error.localizedDescription)")
+                            }
+                        }
+            } else {
+                if let error {
+                    DispatchQueue.main.async {
+                        self.showingError = true
+                        print("error: \(error.localizedDescription)")
                     }
                 }
+                }
             }
-            
         }
-    }
 }
+ 

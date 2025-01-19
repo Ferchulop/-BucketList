@@ -6,17 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		14E274252D3D274A003B4FED /* ProtocolComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2740E2D3D274A003B4FED /* ProtocolComparable.swift */; };
+		14E274262D3D274A003B4FED /* WritingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274102D3D274A003B4FED /* WritingData.swift */; };
+		14E274272D3D274A003B4FED /* IntegrationMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274122D3D274A003B4FED /* IntegrationMaps.swift */; };
+		14E274282D3D274A003B4FED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274142D3D274A003B4FED /* Location.swift */; };
+		14E274292D3D274A003B4FED /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274152D3D274A003B4FED /* Result.swift */; };
+		14E2742A2D3D274A003B4FED /* EnumsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274192D3D274A003B4FED /* EnumsStruct.swift */; };
+		14E2742B2D3D274A003B4FED /* FacialRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2741B2D3D274A003B4FED /* FacialRecognition.swift */; };
+		14E2742C2D3D274A003B4FED /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2741D2D3D274A003B4FED /* ContentView-ViewModel.swift */; };
+		14E2742D2D3D274A003B4FED /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2741E2D3D274A003B4FED /* EditView-ViewModel.swift */; };
+		14E2742E2D3D274A003B4FED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274212D3D274A003B4FED /* ContentView.swift */; };
+		14E2742F2D3D274A003B4FED /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274222D3D274A003B4FED /* EditView.swift */; };
+		14E274302D3D274A003B4FED /* Project_14__BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E274232D3D274A003B4FED /* Project_14__BucketListApp.swift */; };
+		14E274312D3D274A003B4FED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E274172D3D274A003B4FED /* Preview Assets.xcassets */; };
+		14E274322D3D274A003B4FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E274202D3D274A003B4FED /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1460B7302D07778900D95480 /* Project 14. BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 14. BucketList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E2740E2D3D274A003B4FED /* ProtocolComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolComparable.swift; sourceTree = "<group>"; };
+		14E274102D3D274A003B4FED /* WritingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingData.swift; sourceTree = "<group>"; };
+		14E274122D3D274A003B4FED /* IntegrationMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationMaps.swift; sourceTree = "<group>"; };
+		14E274142D3D274A003B4FED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		14E274152D3D274A003B4FED /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		14E274172D3D274A003B4FED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14E274192D3D274A003B4FED /* EnumsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumsStruct.swift; sourceTree = "<group>"; };
+		14E2741B2D3D274A003B4FED /* FacialRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialRecognition.swift; sourceTree = "<group>"; };
+		14E2741D2D3D274A003B4FED /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		14E2741E2D3D274A003B4FED /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
+		14E274202D3D274A003B4FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14E274212D3D274A003B4FED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14E274222D3D274A003B4FED /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		14E274232D3D274A003B4FED /* Project_14__BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_14__BucketListApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1460B7322D07778900D95480 /* Project 14. BucketList */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Project 14. BucketList";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1460B72D2D07778900D95480 /* Frameworks */ = {
@@ -32,7 +55,7 @@
 		1460B7272D07778900D95480 = {
 			isa = PBXGroup;
 			children = (
-				1460B7322D07778900D95480 /* Project 14. BucketList */,
+				14E274242D3D274A003B4FED /* Project 14. BucketList */,
 				1460B7312D07778900D95480 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,91 @@
 				1460B7302D07778900D95480 /* Project 14. BucketList.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		14E2740F2D3D274A003B4FED /* Comparable */ = {
+			isa = PBXGroup;
+			children = (
+				14E2740E2D3D274A003B4FED /* ProtocolComparable.swift */,
+			);
+			path = Comparable;
+			sourceTree = "<group>";
+		};
+		14E274112D3D274A003B4FED /* DocumentsDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				14E274102D3D274A003B4FED /* WritingData.swift */,
+			);
+			path = DocumentsDirectory;
+			sourceTree = "<group>";
+		};
+		14E274132D3D274A003B4FED /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				14E274122D3D274A003B4FED /* IntegrationMaps.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		14E274162D3D274A003B4FED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14E274142D3D274A003B4FED /* Location.swift */,
+				14E274152D3D274A003B4FED /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14E274182D3D274A003B4FED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14E274172D3D274A003B4FED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14E2741A2D3D274A003B4FED /* SwitchingViews */ = {
+			isa = PBXGroup;
+			children = (
+				14E274192D3D274A003B4FED /* EnumsStruct.swift */,
+			);
+			path = SwitchingViews;
+			sourceTree = "<group>";
+		};
+		14E2741C2D3D274A003B4FED /* TouchID&FaceID */ = {
+			isa = PBXGroup;
+			children = (
+				14E2741B2D3D274A003B4FED /* FacialRecognition.swift */,
+			);
+			path = "TouchID&FaceID";
+			sourceTree = "<group>";
+		};
+		14E2741F2D3D274A003B4FED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14E2741D2D3D274A003B4FED /* ContentView-ViewModel.swift */,
+				14E2741E2D3D274A003B4FED /* EditView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14E274242D3D274A003B4FED /* Project 14. BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				14E2740F2D3D274A003B4FED /* Comparable */,
+				14E274112D3D274A003B4FED /* DocumentsDirectory */,
+				14E274132D3D274A003B4FED /* MapKit */,
+				14E274182D3D274A003B4FED /* Preview Content */,
+				14E2741A2D3D274A003B4FED /* SwitchingViews */,
+				14E2741C2D3D274A003B4FED /* TouchID&FaceID */,
+				14E2741F2D3D274A003B4FED /* ViewModels */,
+				14E274162D3D274A003B4FED /* Models */,
+				14E274212D3D274A003B4FED /* ContentView.swift */,
+				14E274222D3D274A003B4FED /* EditView.swift */,
+				14E274232D3D274A003B4FED /* Project_14__BucketListApp.swift */,
+				14E274202D3D274A003B4FED /* Assets.xcassets */,
+			);
+			path = "Project 14. BucketList";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +167,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1460B7322D07778900D95480 /* Project 14. BucketList */,
 			);
 			name = "Project 14. BucketList";
 			packageProductDependencies = (
@@ -109,6 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E274312D3D274A003B4FED /* Preview Assets.xcassets in Resources */,
+				14E274322D3D274A003B4FED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +226,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E274252D3D274A003B4FED /* ProtocolComparable.swift in Sources */,
+				14E274262D3D274A003B4FED /* WritingData.swift in Sources */,
+				14E274272D3D274A003B4FED /* IntegrationMaps.swift in Sources */,
+				14E274282D3D274A003B4FED /* Location.swift in Sources */,
+				14E274292D3D274A003B4FED /* Result.swift in Sources */,
+				14E2742A2D3D274A003B4FED /* EnumsStruct.swift in Sources */,
+				14E2742B2D3D274A003B4FED /* FacialRecognition.swift in Sources */,
+				14E2742C2D3D274A003B4FED /* ContentView-ViewModel.swift in Sources */,
+				14E2742D2D3D274A003B4FED /* EditView-ViewModel.swift in Sources */,
+				14E2742E2D3D274A003B4FED /* ContentView.swift in Sources */,
+				14E2742F2D3D274A003B4FED /* EditView.swift in Sources */,
+				14E274302D3D274A003B4FED /* Project_14__BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

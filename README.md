@@ -18,3 +18,4 @@ BucketList es una app **MVVM** desarrollada en SwiftUI que permite a los usuario
 
 
 (🚧 Pendiente de añadir simulación del funcionamiento 🚧)
+![Simulator Screen Recording - iPhone 16 Pro - 2025-01-20 at 12 50 22](https://github.com/user-attachments/assets/dd774c70-c47f-4548-80ec-105e278c6b75)
